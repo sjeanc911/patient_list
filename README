@@ -1,0 +1,40 @@
+Notes for app:
+- similar to indicator_list_view in reporting app
+- app name : patient_list
+- tutorial source
+http://coenraets.org/blog/2011/12/backbone-js-wine-cellar-tutorial-part-1-getting-started/
+
+What I need :
+Server side
+- Patient model, attibutes
+- CRUDE methods
+
+Client side
+- patient model
+- patient list/collections model
+- add, edit, delete, update patient
+- patient view
+
+Things to learn :
+- including and initializing backbone and underscore in the app
+- creating backbone models and views, and demonstrating how they work
+- creating a collection of models, and demonstrating how they work
+- using localStorage?
+
+
+Creating the app :
+- using rails 3.0.9, haml 3.1.2
+- rails new indicators -d mysql #create rails app
+- rake db:create # create db
+- rails s # start the web server
+
+- dl the js requirements : backbone, underscore, jquery and include
+  them in the app (include dl sources)
+- optionally, you can use ich and mustache for templating
+- test from browser console if they are properly loaded
+- templates are the views we are going to use for the backbone model
+  and views later on
+- create a sample template and insert them in the app, so that we can call
+  them later when needed
+- one way is to put them in the layout
+- check if the templates are properly loaded

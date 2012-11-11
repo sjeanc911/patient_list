@@ -1,0 +1,21 @@
+!!! 5
+!!!
+%html
+  %head
+    %meta{'http-equiv' => 'Content-Type', :content => 'text/html; charset=utf'}
+    = csrf_meta_tag
+
+    %title Patient List
+    = stylesheet_link_tag :all
+    = javascript_include_tag 'jquery-1.8.2.min.js'
+    = javascript_include_tag 'underscore-min.js'
+    = javascript_include_tag 'backbone-min.js'
+    = javascript_include_tag 'ICanHaz.min.js'
+    = javascript_include_tag 'application'
+
+  %body
+    .templates#templates
+      = render :partial => 'layouts/template'
+
+    = yield
+
